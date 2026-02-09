@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+ --primary-color:#529aff;
+ --text-color:#727171;
+}
+
+html {
+  font-size: 10px;
+  }
+  
+  body {
+    font-family: Inter, Sans-Serif;
+    background-color: black;
+    color: white;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+ .peralta-description {
+   margin-top: 1rem;
+   font-size: 1.5rem;
+   font-weight: 400;
+   color: var(--text-color);
+ }
+
+ .peralta-title {
+   color: var(--primary-color);
+   font-weight: 700;
+   font-size: 2rem;
+   text-transform: uppercase;
+ }
+ 
+ .peralta-item-preTitle {
+   font-size: 1.4rem;
+   color: var(--text-color);
+   font-weight: 300;
+ }
+ 
+ .peralta-item-title {
+   font-size: 1.6rem;
+   color: white;
+   font-weight: 500;
+   margin: 0.8rem 0;
+ }
+ 
+ .peralta-item-subtitle {
+   font-size: 1.4rem;
+   color: var(--text-color);
+   font-weight: 400;
+ }
+ 
+ .peralta-container {
+   max-width: 1000px;
+   margin: 0 auto;
+   width: 90%;
+   display: grid;
+   padding: 5rem;
+   background:#070707 ;
+   grid-template-columns: 1fr 1fr;
+   gap: 4rem;
+ }
+ 
+ @media only screen and (max-width: 768px) {
+   .peralta-container {
+      width: 100px;
+      grid-template-columns: 1fr;
+      padding: 3rem;
+      gap: 7rem;
+   }
+ }
+ 
+ .peralta-profile {
+   grid-column: 1/-1;
+   margin-bottom: 2rem;
+ }
+ 
+ .peralta-left-con,
+ .peralta-right-con {
+     display: flex;
+     flex-direction: column;
+     gap: 5rem;
+     }
+     
+ .peralta-footer-con {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+   
+  .peralta-footer-con > div {
+   flex: 1;
+   }
+   
+  @media only screen and (max-width: 768px) {
+    .peralta-profile {
+      margin-bottom: 0;
+    }
+  .peralta-footer-con {
+      flex-direction: column;
+  }
+}
+
+.peralta-profile-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.peralta-profile-profileImg {
+  max-width: 250px;
+}
+
+.peralta-fname {
+  color: white;
+  font-weight: 200;
+  font-size: clamp(2rem, 8vw, 4rem);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: -0.8rem;
+}
+.peralta-lname {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 14vw, 7rem);
+  text-transform: uppercase;
+  display: block;
+}
+
+.peralta-profile-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .peralta-profile-container {
+    flex-direction: column;
+  }
+}
+
+.peralta-skill-list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+ .peralta-ref-item {
+   margin-top: 2;
+ }
+ 
+ .peralta-ref-name {
+   font-size: 1.6rem;
+   font-weight 700;
+ }
+
+.peralta-edu-item {
+  margin-top: 2rem;
+}
+
+.peralta-awards-item {
+  margin-top: 2rem;
+}
+
+.peralta-exp-item {
+  margin-top: 2rem;
+}
+
+.peralta-seminar-item {
+  margin-top: 2rem;
+}
+
+.peralta-interest-item {
+   margin-top: 2rem;
+   display: flex;
+   align-content: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+}
+
+.peralta-interest-list {
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.robles-interest-item svg {
+  width: 2rem;
+}
+
+.peralta-social-item {
+  margin-top: 2rem;
+}
+.peralta-social-list {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--text-color);
+}
+
+.peralta-social-list:hover {
+   color: var(--primary-color);
+}
+
+.peralta-social-list svg {
+  width: 2rem
+}
+
+hr {
+  grid-column: 1/-1;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 2px solid rgba(128, 128, 128, 0.299);
+}
+
+@media only screen and (max-width: 768px) {
+  hr {
+    margin: 0 auto;
+  }
+}
